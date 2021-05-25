@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const bodyparser = require('body-parser');
 const path = require('path'); 
 
+const connectDB = require('./server/database/connection');
+
 const app = express();
 
 dotenv.config({path:'config.env'})
@@ -11,6 +13,9 @@ const PORT = process.env.PORT || 8080;
 
 //log request
 app.use(morgan('tiny'));
+
+//mongoDB connection
+connectDB();
 
 //parse request to body-parser
 app.use(bodyparser.urlencoded({ extended: true}));
@@ -25,19 +30,9 @@ app.use('/img' , express.static(path.resolve(__dirname , 'assets/img')));
 app.use('/js' , express.static(path.resolve(__dirname , 'assets/js')));
 
 
+//Load routers
 
-app.get('/' , (req, res) =>{
-    res.render('index');
-})
-
-app.get('/add-user' , (req, res) =>{
-    res.render('add_user');
-})
-
-app.get('/update-user' , (req, res) =>{
-    res.render('update_user');
-})
-
+app.use('/',require('./server/routes/router'));
 
 
 app.listen(PORT , () =>{
