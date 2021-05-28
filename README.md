@@ -17,11 +17,11 @@
 <h3 align="center">- Show all users in DB -</h3>
 <p align="center">
   <img src="images/users.jpg" />
-</p>
+</p><br><br>
 <h3 align="center">- Responsive Layout -</h3>
 <p align="center">
   <img src="images/responsive-users.jpg" />
-</p>
+</p><br><br>
 <h3 align="center">- Add user Layout -</h3>
 <p align="center">
   <img src="images/add-user.JPG" />
