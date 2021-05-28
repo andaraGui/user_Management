@@ -2,7 +2,7 @@
 
 <h2 align="center">A CRUD operation with nodeJS, MongoDB and Express.</h2>
 <br>
-<h2>How to run the Project</h2>
+<h2>How to run this Project</h2>
  <p>    - Clone the project</p>
  <p>    - Install the NodeJS modules using: <b>npm install</b> </p>
  <p>    - Set the config.env 'MONGO_URI' variable with your database value</p>
