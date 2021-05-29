@@ -5,7 +5,7 @@
 <h2>How to run this Project</h2>
  <p>    - Clone the project</p>
  <p>    - Install the NodeJS modules using: <b>npm install</b> </p>
- <p>    - Set the config.env 'MONGO_URI' variable with your database value</p>
+ <p>    - Create and Set the config.env with a 'MONGO_URI' variable with your database value</p>
  <p>    - Run command: <b>npm start</b>
 
 
